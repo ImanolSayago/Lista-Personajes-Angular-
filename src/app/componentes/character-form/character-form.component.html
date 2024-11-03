@@ -1,0 +1,29 @@
+<section>
+    <form (ngSubmit)="addPersonaje()">
+        <fieldset>
+            <legend>Agregar Personaje</legend>
+
+            <div>
+                <label for="">ID</label>
+                <input type="text" id="ID" [(ngModel)]="personaje.id" name="id">
+            </div>
+
+            <div>
+                <label for="">Nombre</label>
+                <input type="text" id="Nombre" [(ngModel)]="personaje.name" name="Nombre">
+            </div>
+
+            <div>
+                <label for="">Alias</label>
+                <input type="text" id="Alias" [(ngModel)]="personaje.alias" name="Alias">
+            </div>
+
+            <div>
+                <label for="">Descripcion</label>
+                <input type="text" id="Descripcion" [(ngModel)]="personaje.description" name="Descripcion">
+            </div>
+
+            <button>Agregar personaje</button>
+        </fieldset>
+    </form>
+</section>

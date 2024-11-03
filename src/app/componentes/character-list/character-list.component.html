@@ -1,0 +1,8 @@
+<p>Lista Personajes:</p>
+@for (item of listaPersonajes; track $index) {
+    <app-character-card (devolverIDeliminarEvent)="deletePersonaje($event)" (devolverIDbuscarEvent)="verInfo($event)" [perso]="item"></app-character-card>
+}@empty {
+    <p>No existen personajes en la lista</p>
+}
+<br><br><br><br>
+<button (click)="viajar()">Agregar personajes</button>

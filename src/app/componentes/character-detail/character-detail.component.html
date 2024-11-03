@@ -1,0 +1,8 @@
+@if(perso|json){
+    <p>ID: {{perso.id}}</p>
+    <p>Nombre: {{perso.name}}</p>
+    <p>Alias: {{perso.alias}}</p>
+    <p>Descripcion: {{perso.description}}</p>
+}
+
+<button (click)="volverLista()">Volver a la lista</button>
